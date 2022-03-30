@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #srcgh{
+            background-color: aqua;
+            width: 400px;
+            height: 550px;
+            border: 1px solid red;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        #srcgh img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+        #conti{
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        #excc{
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #tik1,#tik4,#tik5{
+            margin-left: 40px;
+            width: 300px;
+        }
+         
+
+        input{
+            width: 130px;
+            height: 20px;
+            border-radius: 5px;
+
+        }
+        p{
+            margin-left:80px ;
+        }
+
+        #inputpay{
+            display: flex;
+          
+        }
+
+        #inputpay p {
+        margin-left: -130px;
+        width: 700px;
+        margin-top: 5px;
+        
+        }
+
+        #inputpay input{
+            margin-left:-100px;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        #tik6{
+            width: 200px;
+            height: 30px;
+            font-size: 25px;
+            text-align: center;
+            margin-left: 95px;
+            color: white;
+            background-color: rgb(15, 131, 54);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>card page</h1>
+
+
+
+
+
+    
+
+<form >   
+    
+    
+    <div id="srcgh">
+             <div id="conti">
+        <div>
+            <h3>Rs.   1031---</h3>
+        </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="">
+        </div>
+    </div>
+
+
+
+    <div>
+        <div>
+            <p >New Card</p>
+            <input type="text" id="tik1">
+        </div>
+
+
+        <div id="excc">
+            <div>
+                <p>Expiry</p>
+                <input type="text" id="tik2">
+            </div>
+            <div>
+                <p>CVV</p>
+                <input type="text" id="tik3">
+            </div>
+        </div>
+
+
+        <div>
+            <p>Name On Card</p>
+            <input type="text" id="tik4">
+        </div>
+
+
+        <div id="inputpay">
+            <div>  <input type="checkbox" id="tik5" style="display: inline-block;"></div>
+            <div>   <p style="display: inline-block;"> save the option for securly payment</p></div>
+          
+         
+        </div>
+
+
+        <div>
+            <input type="submit" value="PROCEED" id="tik6">
+        </div>
+    </div>
+</div>
+</form>
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",payFun)
+
+    function  payFun(){
+        event.preventDefault()
+
+
+        alert("Your Payment has been succesfully !")
+        alert("your delivered.")
+        alert("keep Shopping")
+        window.location.href = "index.html"
+
+       
+     
+    }
+</script>
